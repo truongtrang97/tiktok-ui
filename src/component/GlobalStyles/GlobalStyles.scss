@@ -1,0 +1,30 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: rgb(254 44 85);
+    // defaultLayout
+    --default-width:1150px;
+    --border-header:92px;
+
+}
+html {
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    
+}
+button,input,[tabindex]{
+    outline:none;
+    border:none;
+}
+//  text-rendering: optimizeSpeed; : tối ưu để hiển thị font chữ nhanh nhất
