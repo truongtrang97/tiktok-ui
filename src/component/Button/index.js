@@ -13,7 +13,7 @@ function Button({
     text,
     disable,
     rounded,
-    clasname,
+    className,
     leftIcon,
     rightIcon,
     ...passProps
@@ -32,7 +32,7 @@ function Button({
     // cách 2: khi có disable thì bỏ hết tất cả các props có on
     // remove enent listener when btn is disable
     if (disable) {
-        Object.keys(props).map((key) => {
+        Object.keys(props).forEach((key) => {
             if (key.startsWith('on') && typeof props[key] === 'function') {
                 delete props[key];
             }
@@ -54,7 +54,7 @@ function Button({
         text,
         disable,
         rounded,
-        [clasname]: clasname,
+        [className]: className,
         leftIcon,
         rightIcon,
     });

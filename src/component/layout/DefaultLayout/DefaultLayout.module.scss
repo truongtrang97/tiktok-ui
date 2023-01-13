@@ -6,6 +6,7 @@
 .container {
     min-height: 1000px;
     width: var(--default-width);
+    padding: 0 var(--padding-web);
 
     display: flex;
 }

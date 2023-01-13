@@ -8,9 +8,9 @@ import { HeaderOnly } from '~/component/layout';
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/Following', component: Following },
-    { path: '/Profile', component: Profile },
+    { path: '/@:nickname', component: Profile },
     { path: '/Upload', component: Upload, layout: null },
-    { path: '/Search', component: Upload, layout: HeaderOnly },
+    { path: '/Search', component: Search, layout: HeaderOnly },
 ];
 const privalRoutes = [];
 export { publicRoutes, privalRoutes };

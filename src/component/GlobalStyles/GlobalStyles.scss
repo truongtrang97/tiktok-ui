@@ -1,30 +1,79 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary: rgb(254 44 85);
     // defaultLayout
-    --default-width:1150px;
-    --border-header:92px;
-
+    --default-width: 1150px;
+    --border-header: 92px;
+    --padding-web: 24px;
 }
 html {
     font-size: 62.5%;
 }
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'ProximaNova', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    
 }
-button,input,[tabindex]{
-    outline:none;
-    border:none;
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
 }
 //  text-rendering: optimizeSpeed; : tối ưu để hiển thị font chữ nhanh nhất
+// custom tippy tooltip
+body {
+    .tippy-box {
+        position: relative;
+        background-color: rgba(84, 84, 84, 0.92);
+        color: #fff;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        white-space: normal;
+        font-weight: 600;
+        outline: 0;
+        transition-property: transform, visibility, opacity;
+    }
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+    .tippy-content {
+        padding: 8px 9px;
+    }
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+    // đoạn ni để mất viền
+}
+
+// Fonts emmbeded
+// css fonts hết 1 chỗ để sau tách thành file riêng
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(/assets/Font/Proxima-Nova-Bold.woff);
+    font-weight: 700;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(/assets/Font/Proxima-Nova-Regular.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(/assets/Font/ProximaNova-Semibold.woff2);
+    font-weight: 600;
+}
+@font-face {
+    font-family: SofiaPro;
+    src: url(/assets/Font/sofiapro-bold.woff2);
+    font-weight: 700;
+}
