@@ -67,10 +67,22 @@
 -   Tách component search ra bên ngoài để xử lý: vì khi nó nằm chung trong component header lớn sẽ dẫn đến re-render những component k cần thiết
 -
 
-
 ##
-- encodeURIComponent(): mã hóa kí tự tìm kiếm hợp lệ cho url
+
+-   encodeURIComponent(): mã hóa kí tự tìm kiếm hợp lệ cho url
 
 ## vấn đề khi gọi API :
-- Khi bấm dữ liệu thì request API bị gọi liên tục 
-- debounce --> xử lý khi ta muốn thực hiện hành động cuối cùng sau 1 chuỗi hành động liên tục
+
+-   Khi bấm dữ liệu thì request API bị gọi liên tục
+-   debounce --> xử lý khi ta muốn thực hiện hành động cuối cùng sau 1 chuỗi hành động liên tục
+    setTimeout(()=>{debugger},5000)
+
+## file env
+
+-   môi trường liên quan đến cấu hình deploy
+-   nơi code: mt local/development
+-   qua mt test/stagin
+-   UAT <>
+-   đẩy lên user: mt production
+
+*   xem github clear code

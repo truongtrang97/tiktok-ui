@@ -35,3 +35,7 @@
 
 -   Table of Contents : (xem các tính năng)
     -   Creating an instance : tạo ra 1 đối tượng chứa cấu hình API
+
+## thư viện PropTypes
+
+-   Thư viện để kiểm tra kiểu dữ liệu trong React-component (kiểm tra khi chạy và bao warning liền-> fix)

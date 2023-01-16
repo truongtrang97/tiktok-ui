@@ -12,15 +12,19 @@ import {
     faMusic,
     faSignOut,
 } from '@fortawesome/free-solid-svg-icons';
-import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css';
-import Button from '~/component/Button';
-import Menu from '~/component/Propper/Menu';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faStudiovinari } from '@fortawesome/free-brands-svg-icons';
-import { MessageIcon } from '~/component/icon';
-import Image from '~/component/image';
-import Search from '~/component/Search';
+
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import Config from '~/config';
+
+import { MessageIcon } from '~/component/Icon/Icon';
+import { Link } from 'react-router-dom';
+import Menu from '~/component/Propper/Menu/Menu';
+import Image from '~/component/Image/Image';
+import Button from '~/component/Button/Button';
+import Search from '~/component/Search/Search';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -30,6 +34,126 @@ const MENU_ITEMS = [
         children: {
             title: 'Language',
             data: [
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt ',
+                },
                 {
                     code: 'en',
                     title: 'English',
@@ -85,14 +209,16 @@ function Header() {
     const handleMenuChange = (menuChange) => {
         console.log(menuChange);
     };
-    const current_User = true;
+    const current_User = false;
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 {/* Gồm 3 phần */}
                 {/* Phần 1: logo */}
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="tiktok" />
+                    <Link to={Config.routes.home} className={cx('logo_link')}>
+                        <img src={images.logo} alt="tiktok" />
+                    </Link>
                 </div>
                 {/* Phần 2: search */}
                 <Search />
@@ -135,6 +261,7 @@ function Header() {
                                 // disable
                                 // rounded-*-*
                                 // lefticon={<FontAwesomeIcon icon={faCircleXmark} />}
+                                to="/"
                             >
                                 Log in
                             </Button>

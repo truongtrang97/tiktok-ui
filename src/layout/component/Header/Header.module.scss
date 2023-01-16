@@ -4,6 +4,10 @@
     height: 60px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 .inner {
     height: 100%;
@@ -12,6 +16,9 @@
     align-items: center;
     padding: 0 var(--padding-web);
     justify-content: space-between;
+}
+.logo_link{
+    display:flex
 }
 
 .custom_color {

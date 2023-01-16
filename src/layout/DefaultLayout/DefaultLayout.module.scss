@@ -6,9 +6,10 @@
 .container {
     min-height: 1000px;
     width: var(--default-width);
-    padding: 0 var(--padding-web);
-
+    max-width: 100%;
+    // padding: 0 var(--padding-web);
     display: flex;
+    margin-top: 60px;
 }
 .content {
     flex: 1;

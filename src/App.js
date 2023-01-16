@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { publicRoutes } from '~/routers';
-import {DefaultLayout} from '~/component/layout';
+import { publicRoutes } from '~/routers/routers';
+import DefaultLayout from '~/layout';
 import { Fragment } from 'react';
 function App() {
     return (
@@ -17,7 +17,7 @@ function App() {
                         const Page = route.component;
                         return (
                             <Route
-                            key={index}
+                                key={index}
                                 path={route.path}
                                 element={
                                     <Layout>

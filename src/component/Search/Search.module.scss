@@ -20,6 +20,8 @@
         color: #000;
         flex: 1;
         caret-color: var(--primary);
+        font-family: var(--font-family);
+        padding-right: 40px; //cái ni để chữ không bị tràng ra icon khi value gõ vào dài
     }
     input:not(:placeholder-shown) ~ .search_btn {
         color: rgba(22, 24, 35, 0.75);
@@ -47,21 +49,18 @@
     color: rgba(22, 24, 35, 0.34);
     cursor: pointer;
 }
-.loading{
- animation: spinner 1s linear infinite;
+.loading {
+    animation: spinner 1s linear infinite;
 }
 
 @keyframes spinner {
     from {
         transform: translateY(-50%) rotate(0);
     }
-    to
-    {
+    to {
         transform: translateY(-50%) rotate(360deg);
     }
-    
-} 
-
+}
 
 .search_btn {
     width: 52px;

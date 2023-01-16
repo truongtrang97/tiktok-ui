@@ -2,6 +2,7 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import styles from './menu.module.scss';
+import PropTypes from 'prop-types';
 const cx = classNames.bind(styles);
 function HeaderList({ title, onBack }) {
     return (
@@ -13,5 +14,9 @@ function HeaderList({ title, onBack }) {
         </header>
     );
 }
+HeaderList.propTypes = {
+    title: PropTypes.string.isRequired,
+    onBack: PropTypes.func.isRequired,
+};
 
 export default HeaderList;
