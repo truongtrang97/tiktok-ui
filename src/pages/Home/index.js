@@ -1,5 +1,6 @@
+import Video from '~/component/Video';
 function Home() {
-    return <h2>Home</h2>;
+    return <Video />;
 }
 export default Home;
 //bind ni giúp viết được - trong class

@@ -40,10 +40,34 @@
 
 -   Thư viện để kiểm tra kiểu dữ liệu trong React-component (kiểm tra khi chạy và bao warning liền-> fix)
 
-## Tailwind css;
+## Tailwind css; (Bootstrapo cũng giống z)
 
--   là 1 frameword css
+-   là 1 frameword css: nó giúp chúng ta có 1 hệ thống class có sẵn, với những class này chúng ta chỉ cần add vào những file html use thâu
 -   xây dựng giao diện website trên hệ thống class có sẵn
--   Tùy biến cao , hiệu suất cao
+-   Tùy biến cao , hiệu suất cao, hỗ trợ cả responsive và hover, focus
 
-*   kiểu như ri: thêm class vào html thôi nó sẽ tự css , không cần css như bt (Bootstrapo)
+*   (Bootstrap nó cũng cấp co ta những class có sẵn , đóng gói sẵn chỉ cần gọi ra và dùng thâu, nhược điểm ta phải import hết tất cả thư viện vào mà có những thứ không dùng tới)
+*   khác với tailwin nó giúp chúng ta định nghĩa thêm những phần mà phù hợp với dự án của ta (theo cách ta linh hoạt )
+
+-   tailwin nó giúp chúng ta xuất ra 1 file css chỉ chứa những css mà chúng ta chỉ chứa những class mà ta đã dùng trong project thôi
+
+*   cần :
+
+-   nodejs
+-   extenstion: + Taiwind CSS intelliSense : cái ni để gợi ý tên class trên visual code + PostSCSS Language Support :
+
+1. cài đặt :
+
+-   npm install -D tailwindcss
+
+2. tạo 1 file cấu hình của tailwindcss với content =["./src/**/*.{html,js}"]
+
+-   npx tailwindcss init
+
+3. Tạo ra 1 file tailwind.css trong src
+
+-   import
+
+*   note tailwind:
+
+-   tailwind ni dùng đơn vị rem , nếu muốn dùng px thì dùng [bỏ vào px vào đây]
