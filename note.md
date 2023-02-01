@@ -86,3 +86,7 @@
 -   đẩy lên user: mt production
 
 *   xem github clear code
+
+# note"
+
+tabIndex=-1 để ta không bị focus vào khi bấm dấu tab

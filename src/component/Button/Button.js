@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 
 const cx = classNames.bind(styles);
-function Button({
+function debouncedValue({
     to,
     href,
     primary,
@@ -69,7 +69,7 @@ function Button({
     );
 }
 
-Button.propTypes = {
+debouncedValue.propTypes = {
     to: PropTypes.string,
     href: PropTypes.string,
     primary: PropTypes.bool,
@@ -86,4 +86,4 @@ Button.propTypes = {
     rightIcon: PropTypes.node,
 };
 
-export default Button;
+export default debouncedValue;

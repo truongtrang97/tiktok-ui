@@ -39,3 +39,11 @@
 ## thư viện PropTypes
 
 -   Thư viện để kiểm tra kiểu dữ liệu trong React-component (kiểm tra khi chạy và bao warning liền-> fix)
+
+## Tailwind css;
+
+-   là 1 frameword css
+-   xây dựng giao diện website trên hệ thống class có sẵn
+-   Tùy biến cao , hiệu suất cao
+
+*   kiểu như ri: thêm class vào html thôi nó sẽ tự css , không cần css như bt (Bootstrapo)

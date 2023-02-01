@@ -3,6 +3,9 @@
 -   max-width: 100%(container)-> để khi co trình duyệt lại vẫn có sidebar trên màng hình hiển thị
 -   transition: background-color ease-in-out 200ms; ==. cái ni hỗ trợ để hover vào mượt hơn
 -   <NavLink> hỗ trợ active
+-   object-fit: cover; --> để ảnh nằm gọn trong phạm vi width, height của khung
+- .value +.value: class value đứng sau 1 class value nó mới được ăn
+- nếu 2 class value đứng cách nhau bởi 1 thẻ khác thì dùng: .value ~ .value 
 
 *   cách hoạt động của NavLink :
 
