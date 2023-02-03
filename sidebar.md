@@ -4,8 +4,10 @@
 -   transition: background-color ease-in-out 200ms; ==. cái ni hỗ trợ để hover vào mượt hơn
 -   <NavLink> hỗ trợ active
 -   object-fit: cover; --> để ảnh nằm gọn trong phạm vi width, height của khung
-- .value +.value: class value đứng sau 1 class value nó mới được ăn
-- nếu 2 class value đứng cách nhau bởi 1 thẻ khác thì dùng: .value ~ .value 
+-   .value +.value: class value đứng sau 1 class value nó mới được ăn
+-   nếu 2 class value đứng cách nhau bởi 1 thẻ khác thì dùng: .value ~ .value
+-   loop : trong thẻ video Thiết lập hành động "video sẽ tự động được phát lặp lại sau mỗi lần kết thúc"
+-   snap css : đem đến trải nghiệm cho người dùng tốt hơn
 
 *   cách hoạt động của NavLink :
 

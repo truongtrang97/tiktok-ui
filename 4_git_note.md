@@ -47,7 +47,7 @@ git remote set-url origin git@github.com:Vuong02011996/tools_ubuntu.git
 
 # Merge change from master in dev branch
 
--   git checkout master
+-   git checkout master (chuyển qua nhánh master)
 -   git pull
 -   git checkout dev_v0.1(dev branch)
 -   git rebase master
