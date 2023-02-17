@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
-import images from '~/assets/images';
+import images from 'src/assets/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCircleQuestion,
@@ -17,14 +17,14 @@ import { faStudiovinari } from '@fortawesome/free-brands-svg-icons';
 
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
-import Config from '~/config';
+import Config from 'src/config';
 
-import { MessageIcon } from '~/component/Icon/Icon';
+import { MessageIcon } from 'src/component/Icon/Icon';
 import { Link } from 'react-router-dom';
-import Menu from '~/component/Propper/Menu/Menu';
-import Image from '~/component/Image/Image';
-import Button from '~/component/Button/Button';
-import Search from '~/component/Search/Search';
+import Menu from 'src/component/Propper/Menu/Menu';
+import Image from 'src/component/Image/Image';
+import Button from 'src/component/Button/Button';
+import Search from 'src/component/Search/Search';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [

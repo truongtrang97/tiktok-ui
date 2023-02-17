@@ -1,11 +1,11 @@
-import Home from '~/pages/Home/Home';
-import Following from '~/pages/Following';
-import Profile from '~/pages/Profile';
-import Upload from '~/pages/Upload';
-import Search from '~/pages/Search';
-import { HeaderOnly } from '~/layout';
-import Config from '~/config/';
-import Live from '~/pages/Live';
+import Home from 'src/pages/Home/Home';
+import Following from 'src/pages/Following';
+import Profile from 'src/pages/Profile';
+import Upload from 'src/pages/Upload';
+import Search from 'src/pages/Search';
+import { HeaderOnly } from 'src/layout';
+import Config from 'src/config/';
+import Live from 'src/pages/Live';
 
 const publicRoutes = [
     { path: Config.routes.home, component: Home },

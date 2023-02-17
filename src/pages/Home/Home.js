@@ -1,5 +1,5 @@
-import Video from '~/component/Video/Video';
-// import '~/tailwind.css';
+import Video from 'src/component/Video/Video';
+// import 'src/tailwind.css';
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 import { useEffect, useState, useMemo } from 'react';

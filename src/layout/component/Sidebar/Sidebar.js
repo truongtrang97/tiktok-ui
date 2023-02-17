@@ -1,8 +1,8 @@
 import classNames from 'classnames/bind';
-import config from '~/config';
+import config from 'src/config';
 import Menu from './Menu';
 import { MenuItems } from './Menu';
-import SuggestedAccounts from '~/component/SuggestedAccounts';
+import SuggestedAccounts from 'src/component/SuggestedAccounts';
 import styles from './sidebar.module.scss';
 import {
     IconForYou,
@@ -11,7 +11,7 @@ import {
     ActiveIconForYou,
     ActiveIconFollowing,
     ActiveIconLive,
-} from '~/component/Icon';
+} from 'src/component/Icon';
 
 const cx = classNames.bind(styles);
 function Sidebar() {

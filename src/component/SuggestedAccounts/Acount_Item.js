@@ -5,7 +5,7 @@ import Tippy from '@tippyjs/react';
 import Image from '../Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import { Wrapper as PopperWrapper } from '~/component/Propper';
+import { Wrapper as PopperWrapper } from 'src/component/Propper';
 import AccountPreview from './AccountPreview/AccountPreview';
 
 const cx = classNames.bind(Styles);

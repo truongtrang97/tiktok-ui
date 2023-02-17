@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Button from '../Button';
-import '~/tailwind.css';
+import 'src/tailwind.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faMessage, faMusic, faShare } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Video.module.scss';
-import { useElementOnScreen } from '~/pages/Home/Home';
+import { useElementOnScreen } from 'src/pages/Home/Home';
 const cx = classNames.bind(styles);
 const VideoInfo = ({ data }) => {
     return (

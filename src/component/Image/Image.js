@@ -1,5 +1,5 @@
 // import { forwardRef } from 'react';
-// import images from '~/assets/images';
+// import images from 'src/assets/images';
 // console.log(images.noImage);
 // const Images = forwardRef(({ ...props }, ref) => {
 //     return <img ref={ref} {...props} />;
@@ -10,7 +10,7 @@
 // ====làm lại
 import { useState, forwardRef } from 'react';
 import classNames from 'classnames';
-import images from '~/assets/images';
+import images from 'src/assets/images';
 import styles from './Image.module.scss';
 import PropTypes from 'prop-types';
 
