@@ -20,7 +20,7 @@ function AcountItem() {
         );
     };
     return (
-        <Tippy interactive delay={[800, 0]} placement="bottom" render={renderPreview}>
+        <Tippy interactive hideOnClick delay={[800, 0]} placement="bottom" render={renderPreview}>
             <div className={cx('acountItem')}>
                 <Image
                     className={cx('user_img')}
