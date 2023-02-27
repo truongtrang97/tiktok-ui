@@ -5,6 +5,8 @@ import styles from './Home.module.scss';
 import { useEffect, useState, useMemo } from 'react';
 // import { db } from '../../firebase';
 const cx = classNames.bind(styles);
+
+
 const datas = [
     {
         avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0TlKv8c0aIW1w_DgWrrAD7lFmUFpphaTAjw&usqp=CAU',
@@ -56,6 +58,9 @@ function Home() {
     // document.getElementById('focus').focus();
 
     useEffect(() => {
+        // fetch('https://tiktok.fullstack.edu.vn/api/videos?page=1&type=for-you')
+        // .then(res=>res.json())
+        // .then((res)=>res.data)
         setVideo(datas.map((data) => data));
     }, []);
 
