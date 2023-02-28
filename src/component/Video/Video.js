@@ -11,21 +11,21 @@ const VideoInfo = ({ data }) => {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('header')}>
-                <img className={cx('avatar')} src={data.avatar} alt="avt" />
+                <img className={cx('avatar')} src={data.user.avatar} alt="avt" />
 
                 <div className={cx('content_info')}>
                     <div>
                         <a href="#" className={cx('fullname')}>
-                            {data.fullname}
+                            {data.user.first_name}
                         </a>
                         <a href="#" className={cx('nickname')}>
-                            {data.nickname}
+                            {data.user.nickname}
                         </a>
                     </div>
-                    <div className={cx('label')}>{data.label}</div>
+                    <div className={cx('label')}>{data.user.bio}</div>
                     <span>
                         <FontAwesomeIcon icon={faMusic} />
-                        <span className={cx('label_music')}>{data.labelMusic}</span>
+                        <span className={cx('label_music')}>{data.description}</span>
                     </span>
                 </div>
             </div>
@@ -72,20 +72,20 @@ const VideoContent = ({ data }) => {
 
     return (
         <div className={cx('video_content')}>
-            <video ref={videoRef} onClick={handleVideo} className={cx('video')} src={data.video} loop />
+            <video ref={videoRef} onClick={handleVideo} className={cx('video')} src={data.file_url} loop />
             <div className={cx('list_icon')}>
                 <div className={cx('round_icon')}>
                     <FontAwesomeIcon className={cx('icon_video')} icon={faHeart} />
                 </div>
-                <span className={cx('value')}>{data.like}</span>
+                <span className={cx('value')}>{data.user.followings_count}</span>
                 <div className={cx('round_icon')}>
                     <FontAwesomeIcon className={cx('icon_video')} icon={faMessage} />
                 </div>
-                <span className={cx('value')}>{data.share}</span>
+                <span className={cx('value')}>{data.user.followers_count}</span>
                 <div className={cx('round_icon')}>
                     <FontAwesomeIcon className={cx('icon_video')} icon={faShare} />
                 </div>
-                <span className={cx('value')}>{data.cmt}</span>
+                <span className={cx('value')}>{data.user.likes_count}</span>
             </div>
         </div>
     );
@@ -95,6 +95,7 @@ const Video = ({ data }) => {
     return (
         <div className={cx('wrapper_video')}>
             <VideoInfo data={data} />
+            {console.log({data})}
             <VideoContent data={data} />
         </div>
     );
